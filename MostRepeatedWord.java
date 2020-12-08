@@ -18,11 +18,20 @@ import java.io.BufferedReader;
         	
 		//Opens file in read mode and prints out each character 
     
-          FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
+          FileReader fr=new FileReader("/home/ubuntu/recipe.txt"); 
+	  BufferedReader br = new BufferedReader("/home/ubuntu/recipe.txt");  
+	while((line=br.read())!=null) 
+	  {
+	
+               System.out.print(line);
+		 System.out.println("string");
+		
+          }
 	  while((i=fr.read())!=-1) 
 	  {
 	
                System.out.print((char)i);
+		   System.out.println("integer");
           }
 		
 	  fr.close();    
