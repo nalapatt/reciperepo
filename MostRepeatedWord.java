@@ -11,9 +11,9 @@ import java.io.BufferedReader;
         	String line, word = "";  
         	int count = 0, maxCount = 0;  
 		System.out.println("Inside main ");
-        	//ArrayList<String> words = new ArrayList<String>();  
+        	ArrayList<String> words = new ArrayList<String>();  
     	
-		//ArrayList<String> articles = new ArrayList<String>(Arrays.asList("the", "a", "an"));
+		ArrayList<String> articles = new ArrayList<String>(Arrays.asList("the", "a", "an"));
          	 System.out.println("after initialize");
         	
 		//Opens file in read mode  
