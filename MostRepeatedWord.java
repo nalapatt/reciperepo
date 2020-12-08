@@ -23,7 +23,7 @@ import java.io.BufferedReader;
 
    while ((strCurrentLine = objReader.readLine()) != null) 
    {
-           String string[] = strCurrentline.toLowerCase().split("([,.\\s]+)");  
+           String string[] = strCurrentLine.toLowerCase().split("([,.\\s]+)");  
          for(String s : string){  
 		    if (articles.contains(s))
 		       continue;
