@@ -5,7 +5,7 @@ import java.io.BufferedReader;
   	 
 	public class MostRepeatedWord {  
 		public static void main(String[] args) throws Exception { 
-			System.out.println("Inside Main")
+			System.out.println("Inside Main");
 		}
 	}
      	 
