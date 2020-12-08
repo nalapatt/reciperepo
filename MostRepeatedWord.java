@@ -16,13 +16,14 @@ import java.io.BufferedReader;
 		ArrayList<String> articles = new ArrayList<String>(Arrays.asList("the", "a", "an"));
          	 System.out.println("after initialize");
         	
-		//Opens file in read mode  
+		//Opens file in read mode and prints out each character 
     
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
-		System.out.println("after reading");
+	  System.out.println("after reading");
           int i;    
           while((i=fr.read())!=-1)    
-          System.out.print((char)i);    
+          System.out.print((char)i);  
+		System.out.println("after reading each");
           fr.close();    
 }    
 	
