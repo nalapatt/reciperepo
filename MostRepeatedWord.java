@@ -19,9 +19,9 @@ import java.io.BufferedReader;
 		//Opens file in read mode and prints out each character 
     
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
-	  
-          int i;   
-		while((line = br.readLine()) != null) {  
+	 // FileReader file = new FileReader(args[0]);  
+          //int i;   
+		while((line = fr.readLine()) != null) {  
                 String string[] = line.toLowerCase().split("([,.\\s]+)");  
                 //Adding all words generated in previous step into words  
                 for(String s : string){  
@@ -30,7 +30,7 @@ import java.io.BufferedReader;
 		    {
 			    System.out.println("same words");
 			    System.out.print(s);
-			continue;
+			//continue;
 		    }
 		    else
 		    {
