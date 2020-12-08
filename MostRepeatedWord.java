@@ -18,8 +18,9 @@ import java.io.BufferedReader;
         	
 		//Opens file in read mode  
 		import java.io.FileReader;  
-    public static void main(String args[])throws Exception{    
-          FileReader fr=new FileReader("/home/ubuntu/recipe.txt");    
+    
+          FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
+		System.out.println("after reading");
           int i;    
           while((i=fr.read())!=-1)    
           System.out.print((char)i);    
