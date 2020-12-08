@@ -19,16 +19,32 @@ import java.io.BufferedReader;
 		//Opens file in read mode and prints out each character 
     
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
-	  System.out.println("after reading");
-          int i;    
-          while((i=fr.read())!=-1) 
+	  
+          int i;   
+		while((line = br.readLine()) != null) {  
+                String string[] = line.toLowerCase().split("([,.\\s]+)");  
+                //Adding all words generated in previous step into words  
+                for(String s : string){  
+			
+		    if (articles.contains(s))
+		    {
+			    System.out.println("same words");
+			    System.out.print(s);
+			continue;
+		    }
+		    else
+		    {
+			    System.out.println("not same words");
+			    System.out.print(s);
+                    	words.add(s);  
+		    }
+                }  
+            }  
+          /*while((i=fr.read())!=-1) 
 	  {
-		if (i=fr.read()=="")
-		{
-		 System.out.print("end of word");	
-		}
+	
                System.out.print((char)i);
-          }
+          }*/
 		
 	  fr.close();    
 }    
