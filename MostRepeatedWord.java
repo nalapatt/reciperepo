@@ -21,10 +21,13 @@ import java.io.BufferedReader;
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
 	  System.out.println("after reading");
           int i;    
-          while((i=fr.read())!=-1)    
-          System.out.print((char)i);  
+          while((i=fr.read())!=-1) 
+	  {
+               System.out.print((char)i);
 		System.out.println("after reading each");
-          fr.close();    
+          }
+		
+	  fr.close();    
 }    
 	
 	}
