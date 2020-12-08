@@ -15,25 +15,28 @@ import java.io.BufferedReader;
     	
 		ArrayList<String> articles = new ArrayList<String>(Arrays.asList("the", "a", "an"));
          	 System.out.println("after initialize");
-        	
+/*         	try(FileReader fileReader =new FileReader("c:\\data\\text.txt")){
+
+    int data = fileReader.read();
+    while(data != -) {
+        System.out.print((char) data));
+        data = fileReader.read();
+    }
+}*/
 		//Opens file in read mode and prints out each character 
-    
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt"); 
-	  BufferedReader br = new BufferedReader(fr);  
-	while((line=br.read())!=null) 
-	  {
-	
-               System.out.print(line);
-		 System.out.println("string");
-		
-          }
-	  while((i=fr.read())!=-1) 
+	  int data = fr.read();
+	 while(data != -) {
+        System.out.print((char) data));
+        data = fr.read();
+    }
+	  /*while((i=fr.read())!=-1) 
 	  {
 	
                System.out.print((char)i);
 		   System.out.println("integer");
           }
-		
+		*/
 	  fr.close();    
 }    
 	
