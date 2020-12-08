@@ -4,8 +4,12 @@ import java.io.BufferedReader;
 	import java.util.Arrays;
   	 
 	public class MostRepeatedWord {  
+		public static void main(String[] args) throws Exception { 
+			System.out.println("Inside Main")
+		}
+	}
      	 
-    	public static void main(String[] args) throws Exception {  
+    	/*public static void main(String[] args) throws Exception {  
         	String line, word = "";  
         	int count = 0, maxCount = 0;  
         	ArrayList<String> words = new ArrayList<String>();  
@@ -25,7 +29,7 @@ import java.io.BufferedReader;
    	 	else
                		 words.add(s);  
             	}  
-        	}  
+        	}*/  
          	 
         	//Determine the most repeated word in a file  
         	for(int i = 0; i < words.size(); i++){  
