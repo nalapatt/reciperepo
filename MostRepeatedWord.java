@@ -23,8 +23,11 @@ import java.io.BufferedReader;
           int i;    
           while((i=fr.read())!=-1) 
 	  {
+		if (fr.read())="")
+		{
+		 System.out.print("end of word");	
+		}
                System.out.print((char)i);
-		System.out.println("after reading each");
           }
 		
 	  fr.close();    
