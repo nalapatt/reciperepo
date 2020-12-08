@@ -19,7 +19,7 @@ import java.io.BufferedReader;
 		//Opens file in read mode and prints out each character 
     
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt"); 
-	  BufferedReader br = new BufferedReader("/home/ubuntu/recipe.txt");  
+	  BufferedReader br = new BufferedReader(fr);  
 	while((line=br.read())!=null) 
 	  {
 	
