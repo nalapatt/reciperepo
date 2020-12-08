@@ -9,7 +9,7 @@ import java.io.BufferedReader;
     	public static void main(String[] args) throws Exception { 
 		
         	String line, word = "";  
-        	int i = 0, count = 0, maxCount = 0;  
+        	int count = 0, maxCount = 0;  
 		System.out.println("Inside main ");
         	ArrayList<String> words = new ArrayList<String>();  
     	
