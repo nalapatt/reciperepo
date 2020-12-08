@@ -17,16 +17,26 @@ import java.io.BufferedReader;
          	 System.out.println("after initialize");
 		//Opens file in read mode and prints out each character 
 		BufferedReader objReader = null;
-   String strCurrentLine;
+    String strCurrentLine;
 
    objReader = new BufferedReader(new FileReader("/home/ubuntu/recipe.txt"));
 
-   while ((strCurrentLine = objReader.readLine()) != null) {
+   while ((strCurrentLine = objReader.readLine()) != null) 
+   {
 
-    System.out.println(strCurrentLine);
+    //System.out.println(strCurrentLine);
+	   if (strCurrentLine != "")
+	   {
+	   words=strCurrentLine;
+		   System.out.println(words[]);
+	   }
+	   else
+	   {
+		   System.out.println("end of word");
+	   }
    }
         
 	  objReader.close();    
 }    
 	
-	}
+}
