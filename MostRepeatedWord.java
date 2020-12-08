@@ -18,36 +18,12 @@ import java.io.BufferedReader;
         	
 		//Opens file in read mode and prints out each character 
     
-          //FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
-	  FileReader fr = new FileReader(args[0]);  
-          //int i;   
-		while((line = fr.readLine()) != null) 
-		{  
-                String string[] = line.toLowerCase().split("([,.\\s]+)");  
-			System.out.println("words");
-                //Adding all words generated in previous step into words  
-                for(String s : string)
-		{  
-			
-		    if (articles.contains(s))
-		    {
-			    System.out.println("same words");
-			    System.out.print(s);
-			//continue;
-		    }
-		    else
-		    {
-			    System.out.println("not same words");
-			    System.out.print(s);
-                    	words.add(s);  
-		    }
-                }  
-            }  
-          /*while((i=fr.read())!=-1) 
+          FileReader fr=new FileReader("/home/ubuntu/recipe.txt");  
+	  while((i=fr.read())!=-1) 
 	  {
 	
                System.out.print((char)i);
-          }*/
+          }
 		
 	  fr.close();    
 }    
