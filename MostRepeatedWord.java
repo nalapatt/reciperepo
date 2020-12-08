@@ -27,8 +27,8 @@ import java.io.BufferedReader;
     //System.out.println(strCurrentLine);
 	   if (strCurrentLine != "")
 	   {
-	   words=strCurrentLine;
-		   System.out.println(words);
+	   words[]=strCurrentLine;
+		   System.out.println(strCurrentLine);
 	   }
 	   else
 	   {
