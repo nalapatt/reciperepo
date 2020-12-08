@@ -23,11 +23,11 @@ import java.io.BufferedReader;
 
    while ((strCurrentLine = objReader.readLine()) != null) 
    {
-
-           System.out.println(strCurrentLine);
-	   words = strCurrentline.split(" ");
-	   System.out.println(words);
-	   if (words != " ")
+           String string[] = strCurrentline.toLowerCase().split("([,.\\s]+)");  
+          // System.out.println(strCurrentLine);
+	   //words = strCurrentline.split(" ");
+	   //System.out.println(words);
+	   if (string[] != " ")
 	   {
 		   System.out.println(strCurrentLine);
 	   }
