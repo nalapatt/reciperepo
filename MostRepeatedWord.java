@@ -26,7 +26,7 @@ import java.io.BufferedReader;
 		//Opens file in read mode and prints out each character 
           FileReader fr=new FileReader("/home/ubuntu/recipe.txt"); 
 	  int data = fr.read();
-	 while(data != -) {
+	 while(data != null) {
         System.out.print((char) data));
         data = fr.read();
     }
