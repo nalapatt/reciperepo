@@ -24,17 +24,12 @@ import java.io.BufferedReader;
    while ((strCurrentLine = objReader.readLine()) != null) 
    {
            String string[] = strCurrentline.toLowerCase().split("([,.\\s]+)");  
-          // System.out.println(strCurrentLine);
-	   //words = strCurrentline.split(" ");
-	   //System.out.println(words);
-	   if (string[] != " ")
-	   {
-		   System.out.println(strCurrentLine);
-	   }
-	   else
-	   {
-		   System.out.println("end of word");
-	   }
+         for(String s : string){  
+		    if (articles.contains(s))
+		       continue;
+		    else
+                    	words.add(s);  
+         	}  
    }
         
 	  objReader.close();    
