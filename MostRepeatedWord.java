@@ -24,10 +24,10 @@ import java.io.BufferedReader;
    while ((strCurrentLine = objReader.readLine()) != null) 
    {
 
-    //System.out.println(strCurrentLine);
-	   String[] endword = strCurrentline.split(" ");
-	   System.out.println(endword);
-	   if (endword != " ")
+           System.out.println(strCurrentLine);
+	   words = strCurrentline.split(" ");
+	   System.out.println(words);
+	   if (words != " ")
 	   {
 		   System.out.println(strCurrentLine);
 	   }
