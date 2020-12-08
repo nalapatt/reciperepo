@@ -19,7 +19,7 @@ import java.io.BufferedReader;
 		BufferedReader objReader = null;
    String strCurrentLine;
 
-   objReader = new BufferedReader(new FileReader("/home/ubuntu/recipe.txt");
+   objReader = new BufferedReader(new FileReader("/home/ubuntu/recipe.txt"));
 
    while ((strCurrentLine = objReader.readLine()) != null) {
 
