@@ -25,7 +25,9 @@ import java.io.BufferedReader;
    {
 
     //System.out.println(strCurrentLine);
-	   if (strCurrentLine != " ")
+	   String[] endword = strCurrentline.split(" ");
+	   System.out.println(endword);
+	   if (endword != " ")
 	   {
 		   System.out.println(strCurrentLine);
 	   }
