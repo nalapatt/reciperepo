@@ -26,7 +26,7 @@ import java.io.BufferedReader;
     System.out.println(strCurrentLine);
    }
         
-	  fr.close();    
+	  objReader.close();    
 }    
 	
 	}
